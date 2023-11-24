@@ -1,0 +1,253 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  background-color: #00bcd4;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+}
+/*============(Header)===============*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/*============(Hero)===============*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba");
+  background-size: cover;
+  height: calc(100vh - 100px);
+  padding: 2rem;
+  color: #fff;
+  margin-top: 60px;
+}
+
+.hero__title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero__text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 60%;
+}
+
+.hero__button:hover {
+  background-color: #0097a7;
+}
+
+/*============(About)===============*/
+.about {
+  padding: 4rem 2rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about p {
+  line-height: 1.8;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+.main-menu.menu-fixed.menu-light.menu-accordion.menu-shadow--dark {
+	background-color: black;
+	color: cornflowerblue;
+}
+
+/*============(Call To Action)===============*/
+.cta {
+  background-color: #ccc;
+  color: #222;
+  padding: 4rem 2rem;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cta p {
+  line-height: 1.8;
+  max-width: 80%;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+.cta button {
+  background-color: white;
+  color: #00bcd4;
+}
+
+.cta button:hover {
+  background-color: #f2f2f2;
+}
+
+/*============(Footer)===============*/
+.footer {
+  background-color: #fff;
+  color: #222;
+  padding: 2rem;
+}
+
+.footer p {
+  text-align: center;
+}
+
+/*==============(dark mode styles)=============*/
+nav.header-navbar.navbar.navbar-expand-lg.align-items-center.floating-nav.navbar-light.navbar-shadow.container-xxl--dark {
+	background-color: black;
+	color: #971111;
+}
+.about--dark {
+  background-color: #222;
+  color: #fff;
+}
+.footer--dark {
+  background-color: #222;
+  color: #f9f9f9;
+}
+.cta--dark {
+  background-color: #00bcd4;
+  color: #fff;
+}
+.header-navbar.floating-nav {
+	position: fixed;
+	right: 0;
+	margin: 1.3rem auto 0;
+	width: calc(100vw - (100vw - 100%) - calc(2rem * 2) - 260px);
+	border-radius: 0.428rem;
+	z-index: 12;
+}
+.header-navbar.navbar-shadow {
+	box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+}
+.header-navbar.fixed-top, .header-navbar.floating-nav {
+	left: 260px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+input:checked + .slider:after {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
